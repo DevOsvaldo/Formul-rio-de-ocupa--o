@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" width="device-width-initial-scale:1.0">
+    <link rel="stylesheet" text="text/css" href="css/estilo.css"/>
+    <title>FORMULÁRIO TESTE</title>
+</head>
+<body>
+    <main class="container">
+       <header class="cabecalho">  
+            <h1 id="titulo" class="texto-form">Formulário de pesquisa</h1>
+        </header>
+        <form id="pesquisa">
+         <div class="form-pesq">
+            <p><label for="cnome">NOME</label></br>
+                <input type="text" 
+                name="tnome"
+                class="form-role" 
+                id="cnome" 
+                size="60" 
+                maxlength="50" 
+                placeholder="DIGITE SEU NOME COMPLETO"/>
+            </p></div>
+            <div class="form-pesq">
+            <p><label for="cmail">E-MAIL</label></br>
+                <input type="email" 
+                name="tmail" 
+                class="form-role"
+                id="cmail" 
+                size="60" 
+                maxlength="55" 
+                placeholder="DIGITE SEU EMAIL"/>
+            </p></div>
+            <div class="form-pesq">
+                <p><label for="cage">IDADE</label></br>
+                <input type="number" 
+                name="tage" 
+                class="form-role"
+                id="cage" 
+                min="10" 
+                max="99" 
+                placeholder="SUA IDADE"/>
+            </p></div>
+
+            <div class="form-pesq">
+                <p><label for="crole">Qual a sua ocupação atual?</label></br><p>
+
+                <select name="trole" class="form-role"id="crole">
+                    <option disabled selected value>Escolha uma ocupação</option>
+                        <option value="estud">Leigo(sem conhecimento)</option>
+                        <option value="aspirante">Iniciando na Programação</option>
+                        <option value="Experiente">Experiente</option>   
+                    </optgroup>
+
+                </select> 
+            </div>   
+            
+            <div class="form-pesq">
+
+                <p> O quanto a programação influência na sua vida?</p>
+                <p><input type="radio" name="influence" id="input-radio"/><label>Muito</label></p>
+                <p><input type="radio" name="influence" id="input-radio"/><label>Pouco</label></p>
+                <p><input type="radio" name="influence" id="input-radio"/><label>Não faço ideia</label></p>
+                <p><input type="radio" name="influence" id="input-radio"/><label>Indiferente</label></p>
+            </div>
+            
+            <div class="form-pesq">
+                <h3>Qual a sua area de Desenvolvimento?</h3>
+
+                <select id="suaarea" name="interesse" classe="form-role" >
+                    <option disabled selected value>Area de atuação</option>
+                        <option value="front">Front-End</option>
+                        <option value="back">Back-End</option>
+                        <option value="full">Fullstack</option>
+                </select>        
+            </div>    
+            <div class="form-pesq">
+                <p>Quais linguagens de programação que voce domina ou tem conhecimento?<span class="dominio">Marque todas que tiver conhecimento</span></p>
+                    <label><input type="checkbox" name="learn" id="input-checkbox" value="Javascript">Javascript</label>
+                    <label><input type="checkbox" name="learn" id="input-checkbox" value="Python">Python</label>
+                    <label><input type="checkbox" name="learn" id="input-checkbox" value="C++">C++</label>
+                    <label><input type="checkbox" name="learn" id="input-checkbox" value="C#">C#</label>
+                    <label><input type="checkbox" name="learn" id="input-checkbox" value="PHP">PHP</label>
+                    <label><input type="checkbox" name="learn" id="input-checkbox" value="JAVA">JAVA</label>
+                    <label><input type="checkbox" name="learn" id="input-checkbox" value="C">C         </label>
+            </div>
+            
+            
+           <div class="form-pesq"> 
+                <p>Se tiver conhecimento de algum outra que não foi mencionada escreva abaixo:</p>
+                <textarea id="comentario" class="input-textarea" name="conteudo" placeholder="Envie nos o seu comentario..."></textarea>
+            </div>
+
+        <div class="form-pesq">        
+        <button type="submit" id="submit" class="submit-button">
+            Enviar Pesquisa
+        </button>
+        </div>
+
+
+    </form>
+
+    </main> 
+
+
+</body>
+
+</html>
