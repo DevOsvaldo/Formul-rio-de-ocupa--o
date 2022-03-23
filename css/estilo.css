@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body{
-   font-family: 'Poppins', sans-serif;
-   font-size: 1.2rem;
-   font-weight: 400;
-   line-height: 1.4;
-   color:#f3f3f3;
-   margin: 0;
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #f3f3f3;
+    margin: 0;
 }
 
 body::before {
@@ -30,37 +30,30 @@ body::before {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background:#1b1b32;
-    background-image:linear-gradient(
-        115deg,
-        rgba(26, 26, 206, 0.8),
-        rgba(147, 147, 209, 0.6)
-      ),
-      url(https://cio.com.br/wp-content/uploads/2019/05/TI-tendências.jpg);
+    background: #1b1b32;
+    background-image: linear-gradient( 115deg, rgba(26, 26, 206, 0.8), rgba(147, 147, 209, 0.6)), url('../imagens/0101.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
 }
 
-
-h1{
+h1 {
     font-weight: 400;
-
 }
 
-p{
+p {
     font-size: 1.125rem;
 }
 
 h1,
-p{
+p {
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
-label{
+label {
     display: flex;
-    align-items:center;
+    align-items: center;
     font-size: 1.12rem;
     margin-bottom: 0.5rem;
 }
@@ -68,104 +61,104 @@ label{
 input,
 button,
 select,
-textarea{
+textarea {
     margin: 0;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
 }
 
-button{
+button {
     border: none;
 }
 
-.container{
+.container {
     width: 100%;
-    margin:3.126rem auto  0 auto;
+    margin: 3.126rem auto 0 auto;
 }
 
-@media (min-width:576px){
-    .container{
+@media (min-width:576px) {
+    .container {
         max-width: 540px;
-}    
+    }
 }
 
-@media (min-width:768px){
-    .container{
+@media (min-width:768px) {
+    .container {
         max-width: 720px;
     }
 }
 
-.header{
-    padding:0 0.620rem;
+.header {
+    padding: 0 0.620rem;
     margin-bottom: 1.865rem;
-
 }
-.dominio{
+
+.dominio {
     margin-left: 0.25rem;
     font-size: 0.9rem;
     color: #e4e4e4;
 }
-.texto-form{
+
+.texto-form {
     text-align: center;
 }
 
 
 /*form*/
 
-form{
+form {
     background: rgba(27, 27, 50, 0.8);
-    padding: 2.56rem,0.625rem;
+    padding: 2.56rem, 0.625rem;
     border-radius: 0.25rem;
 }
 
-@media (min-width:480px){
-    form{
+@media (min-width:480px) {
+    form {
         padding: 2.5rem;
     }
 }
 
-.form-pesq{
+.form-pesq {
     margin: 0 auto 1.25rem auto;
     padding: 0.25rem;
 }
 
-.form-role{
+.form-role {
     display: block;
     width: 100%;
     height: 2.375rem;
     padding: 0.375rem 0.75rem;
     color: #5889b9;
-    background-color:#fff;
-    background-clip:padding-box;
-    border:1px solid #ced4da;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    transition:border-color 0.15s ease-in-out,box-shaddow, 0.15s ease-in-out;
-
+    transition: border-color 0.15s ease-in-out, box-shaddow, 0.15s ease-in-out;
 }
-.form-role:focus{
+
+.form-role:focus {
     border-color: #80bdff;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .input-radio,
-.input-checkbox{
+.input-checkbox {
     display: inline-block;
     margin-right: 0.625rem;
     min-height: 1.25rem;
     min-width: 1.25rem;
 }
 
-.input-textarea{
-    min-height:120px;
+.input-textarea {
+    min-height: 120px;
     width: 100%;
     padding: 0.625rem;
     resize: vertical;
-
 }
 
-.submit-button{
+.submit-button {
     display: block;
     width: 100%;
     padding: 0.75rem;
